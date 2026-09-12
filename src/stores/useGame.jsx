@@ -5,7 +5,7 @@ export default create(subscribeWithSelector((set) => {
     const savedHighScore = parseInt(localStorage.getItem("highScore") || "0", 10);
 
     return {
-        blocksCount: 10,
+        blocksCount: 100,
         blocksSeed: 0,
         startTime: 0,
         endTime: 0,
