@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: ivory;
+}
+
+.interface{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-family: "Bebas Neue", cursive;
+}
+
+.time{
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  /* width: 20%; */
+  margin: auto;
+  color: #fff;
+  font-size: 6vh;
+  background-color: #203dbd84;
+  border-radius: 10px;
+  border-top: 5px solid #1900f9;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.restart{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  color: #fff;
+  background: #00000033;
+  pointer-events: auto;
+  cursor: pointer;
+  font-size: 80px;
+}
+
+/**
+ * Controls
+ */
+ .controls{
+     position: absolute;
+     bottom: 10%;
+     left: 0;
+     width: 100%;
+ }
+ 
+ .controls .raw{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .controls .key{
+     width: 40px;
+     height: 40px;
+     margin: 4px;
+     border: 2px solid #ffffff;
+     background: #ffffff44;
+ }
+ 
+ .controls .key.large{
+     width: 144px;
+ }
+ 
+ .controls .key.active{
+     background: #ffffff99;
+ }
+
+ .game-over{
+  font-family: "Silkscreen", sans-serif;
+ }
+
+ .key {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  color: white;
+  font-size: 24px;
+  border-radius: 12px;
+  user-select: none;
+}
+.key.active {
+  background: #666;
+}
